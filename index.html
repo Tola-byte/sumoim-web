@@ -18,6 +18,13 @@
             font-style: normal;
             line-height: 1.6;
         }
+        .helpsection{
+            margin-top: 4rem;
+        }
+
+        .helpsection a{
+            color:#001d2f
+        }
 
         .header {
             background: antiquewhite;
@@ -113,7 +120,7 @@
         }
 
           .content .secondsection .secondsectiontext{
-            margin: auto;
+            /* margin: auto; */
         }
 
 
@@ -207,6 +214,10 @@
         justify-content: space-between;
         padding: 2rem;
     }
+
+    .footer a{
+        text-decoration: none;
+    }
     .footer .footer-text{
         color: #fff;
         font-size: 1rem;
@@ -219,27 +230,6 @@
             from, to { border-color: transparent; }
             50% { border-color: black; }
         }
-
-        /* @media (max-width: 1000px) {
-            .headercontent{
-                display: flex;
-                flex-direction: column;
-            }
-            .content {
-                margin: 1rem;
-            }
-
-            .header h1 {
-                font-size: 2.5rem;
-                padding: 2rem;
-            }
-
-            .container {
-                flex-direction: column;
-                margin: 1rem;
-            } */
-
-
               @media (max-width: 1200px) {
             .header .headercontent {
                 padding-left: 2rem;
@@ -410,6 +400,12 @@
                     </li>
                 </ul>
 
+                <div class="helpsection">
+                    <h3>Need Help or Info?</h3>
+                    <p>If you're facing any issues, feel free to <a
+                            href="mailto:support@sumoim.com?subject=Support%20Request">contact us</a>.</p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -443,9 +439,6 @@
                         index++;
                         setTimeout(typeWriter, speed);
                     }
-                    //  else {
-                    //     setTimeout(resetTypewriter, speed * 10); // Pause before resetting
-                    // }
                 }
                 function resetTypewriter() {
                     index = 0;
