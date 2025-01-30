@@ -56,36 +56,44 @@
 
 <body>
     <div class="container">
-        <h1>Sign in to SumoIm</h1>
-        <p>Authenticate using Google.</p>
-
+        <h1>Access SumoIm</h1>
+        <p>You can access the SumoIm app using the link below:</p>
+    
+        <p>
+            <a href="https://apps.apple.com/us/app/sumoim/id6737198565" target="_blank">
+                Open SumoIm App
+            </a>
+        </p>
+    
+        <h2>Login Options</h2>
+        <p>You can sign in by:</p>
+        <ul style="text-align: left;">
+            <li>Creating your own account.</li>
+            <li>Using the following credentials:</li>
+        </ul>
+    
+        <p><strong>Email:</strong> bezaleelisaiah@gmail.com</p>
+        <p><strong>Password:</strong> 1234567890</p>
+        <p>Then you can authenticate your google info using the "Connect to" button and selecting the Google option</p>
+        <p>Alternatively, you can just test the process here using Google:</p>
+    
         <!-- Google Sign-In Button -->
-        <div id="g_id_onload" 
-        data-client_id="372075971105-ujlg3ubedbtgvdi415gcu4hvgc9io7f4.apps.googleusercontent.com" 
-        data-context="signin" 
-        data-ux_mode="popup"    
-        data-scope="https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.modify https://www.googleapis.com/auth/gmail.send"
-        data-prompt="select_account consent"
-        data-callback="handleCredentialResponse" 
-        data-auto_prompt="false">
+        <div id="g_id_onload" data-client_id="372075971105-ujlg3ubedbtgvdi415gcu4hvgc9io7f4.apps.googleusercontent.com"
+            data-context="signin" data-ux_mode="popup"
+            data-scope="https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.modify https://www.googleapis.com/auth/gmail.send"
+            data-prompt="select_account consent" data-callback="handleCredentialResponse" data-auto_prompt="false">
         </div>
         <div class="g_id_signin" data-type="standard"></div>
-
+    
+        <h2>Privacy & Terms</h2>
         <p style="font-size: 14px;">
-            <a href="https://web.sumoim.com/privacypolicy" target="_blank">Privacy Policy</a> 
+            <a href="https://web.sumoim.com/privacypolicy" target="_blank">Privacy Policy</a>
             <!-- <a href="https://y/terms-of-service" target="_blank">Terms of Service</a> -->
         </p>
-
-        <!-- Explanation of Google Sign-In Process -->
-        <h2>How Login Works</h2>
-        <p>When you sign in with Google:</p>
-        <ul style="text-align: left;">
-            <li>You authorize our app to access specific data based on the requested scopes.</li>
-            <li>Google provides us with an *OAuth access token*, which is securely sent to our backend.</li>
-            <li>Our server verifies the token with Google to authenticate you.</li>
-            <li>We use the granted scopes to perform necessary tasks (e.g., accessing your profile or email).</li>
-        </ul>
     </div>
+
+
+
 
     <script>
         function handleCredentialResponse(response) {
