@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CrestStudy</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Google Sign-In Button */
+        .g-signin2 {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign in to SumoIm</h1>
+        <p>Authenticate using Google.</p>
+
+        <!-- Google Sign-In Button -->
+        <div id="g_id_onload" 
+        data-client_id="372075971105-ujlg3ubedbtgvdi415gcu4hvgc9io7f4.apps.googleusercontent.com" 
+        data-context="signin" 
+        ux_mode="popup"    
+        data-callback="handleCredentialResponse" 
+        data-auto_prompt="false">
+        </div>
+        <div class="g_id_signin" data-type="standard"></div>
+
+        <p style="font-size: 14px;">
+            <a href="https://web.sumoim.com/privacy-policy" target="_blank">Privacy Policy</a> 
+            <!-- <a href="https://y/terms-of-service" target="_blank">Terms of Service</a> -->
+        </p>
+
+        <!-- Explanation of Google Sign-In Process -->
+        <h2>How Login Works</h2>
+        <p>When you sign in with Google:</p>
+        <ul style="text-align: left;">
+            <li>You authorize our app to access specific data based on the requested scopes.</li>
+            <li>Google provides us with an *OAuth access token*, which is securely sent to our backend.</li>
+            <li>Our server verifies the token with Google to authenticate you.</li>
+            <li>We use the granted scopes to perform necessary tasks (e.g., accessing your profile or email).</li>
+        </ul>
+    </div>
+
+    <script>
+        function handleCredentialResponse(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+            alert("You have successfully signed in! Your token is in the console.");
+            // Send the token to your backend for verification and authentication
+        }
+    </script>
+</body>
+
+</html>
