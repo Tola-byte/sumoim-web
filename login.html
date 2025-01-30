@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - CrestStudy</title>
+    <title>Login - Sumoim</title>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <style>
         /* General Styles */
@@ -63,14 +63,16 @@
         <div id="g_id_onload" 
         data-client_id="372075971105-ujlg3ubedbtgvdi415gcu4hvgc9io7f4.apps.googleusercontent.com" 
         data-context="signin" 
-        ux_mode="popup"    
+        data-ux_mode="popup"    
+        data-scope="https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.modify https://www.googleapis.com/auth/gmail.send"
+        data-prompt="select_account consent"
         data-callback="handleCredentialResponse" 
         data-auto_prompt="false">
         </div>
         <div class="g_id_signin" data-type="standard"></div>
 
         <p style="font-size: 14px;">
-            <a href="https://web.sumoim.com/privacy-policy" target="_blank">Privacy Policy</a> 
+            <a href="https://web.sumoim.com/privacypolicy" target="_blank">Privacy Policy</a> 
             <!-- <a href="https://y/terms-of-service" target="_blank">Terms of Service</a> -->
         </p>
 
