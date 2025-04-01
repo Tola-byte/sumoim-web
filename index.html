@@ -7,13 +7,14 @@
     <meta name=“facebook-domain-verification” content=“bbqfoofrf898tjy5rhlqgkaz4kqqbo” />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <title>Sumo-IM</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Syne:wght@400..800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>SUMOIM</title>
     <script defer></script>
     <style>
         body {
-            margin: 0;
-            font-family: "Syne", sans-serif;
+            margin: auto;
+            font-family: "Urbanist", sans-serif;
             font-optical-sizing: auto;
             /* font-weight: 800; */
             font-style: normal;
@@ -28,14 +29,16 @@
         }
 
         .header {
-            background: antiquewhite;
-            color: white;
+            /* background: antiquewhite; */
+            /* background: linear-gradient(to right, #6A11CB, #2575FC); */
+            background:  #FAF9F6;
+            color: #1a1a1a;
             text-align: center;
             padding: 2rem 0;
             height: 70vh;
         }
         .header .headertext{
-             font-family: "Anton SC", sans-serif;
+             font-family: "Urbanist", sans-serif;
         }
         .header .headercontent{
             display: flex;
@@ -101,7 +104,7 @@
             font-size: 2.5rem;
             margin-bottom: 1rem;
             text-align: center;    
-            font-family: 'Syne', sans-serif;
+            font-family: 'Urbanist', sans-serif;
             font-weight: 600;
         }
 
@@ -109,7 +112,7 @@
             font-size: 1rem;
             color: #333;
             margin: 0.5rem 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Urbanist', sans-serif;
         }
         .content .secondsection{
             display: flex;
@@ -149,7 +152,7 @@
         }
 
         #typewriter {
-        font-family: monospace;
+        font-family: "Urbanist";
         white-space: nowrap;
         overflow: hidden;
         }
@@ -158,7 +161,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: antiquewhite;
+        font-family: "Urbanist";
+        background:  #FAF9F6;
         padding: 2rem;
         border-radius: 10px;
         padding-bottom: 8rem;
@@ -189,7 +193,7 @@
         width: 100%;
         max-width: 300px;
         padding: 1rem;
-        font-family: 'Syne', sans-serif;
+        font-family: 'Urbanist', sans-serif;
         font-size: 0.8rem;
     }
 
@@ -198,6 +202,7 @@
         color: white;
         border: none;
         border-radius: 5rem;
+        font-family: "Urbanist";
         padding: 0.5rem 1rem;
         cursor: pointer;
         font-size: 1rem;
@@ -212,6 +217,7 @@
         background: #001d2f;
         display: flex;
         flex-direction: row;
+        font-family: "Urbanist";
         justify-content: space-between;
         padding: 2rem;
     }
@@ -222,7 +228,7 @@
     .footer .footer-text{
         color: #fff;
         font-size: 1rem;
-        font-family: monospace;
+        font-family: "Urbanist";
     }
 
 
@@ -356,8 +362,10 @@
 
 <body>
     <div class="header">
+        
         <h2 class="headertext">
-            SUMO-IM
+            <img src="./assets/logo.png" style="position: relative; top: 0.8rem; margin-left: -0.6rem;"/>
+            SUMOIM
 
             <div id="typewriter"></div>
         </h2>
@@ -370,9 +378,17 @@
             For small and large businesses
         </h6>
         
-        <div class="headerbtn">
-         <p>Launching soon </p> 
-        </div>
+        <!-- <div class="headerbtn">
+            https://apps.apple.com/us/app/sumoim/id6737198565
+         <p>Available on App Store </p> 
+        </div> -->
+
+        <a href="https://apps.apple.com/us/app/sumoim/id6737198565" style="text-decoration: none; color: #fff;" target="_blank" rel="noopener noreferrer">
+            <div class="headerbtn">
+                <p>Available on App Store</p> 
+            </div>
+        </a>
+        
         </div>
 
         <span class="bgpic">
@@ -390,8 +406,18 @@
 
                 <h2>Access your socials on one click</h2>
                 <ul>
+                  
                     <li>
-                        Respond to text emails faster.
+                        Connect multiple social accounts in one place
+                    </li>
+                    <li>
+                        Stay updated with real-time notifications
+                    </li>
+                    <li>
+                        Secure and reliable platform
+                    </li>
+                    <li>
+                        Manage conversations effortlessly.
                     </li>
                     <li>
                         Access your conversation on authenticating with your favorite socials.
@@ -412,11 +438,19 @@
     </div>
 
     <div class="waitlist-section">
-    <h2>Join our waitlist now !</h2>
-    <div class="input-group">
-        <input type="email" class="input" placeholder="Enter your email" required>
-        <button type="submit" class="headerbtn2">Submit</button>
-    </div>
+        <h2>Discover More About Sumoim</h2>
+
+
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/fshVIgRS3hE" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+
     </div>
 
     <footer class="footer">
@@ -425,12 +459,12 @@
             <div class="footer-text"> Privacy Policy </div>
         </a>
         
-        <div class="footer-text">SUMO-IM</div>
+        <div class="footer-text">SUMOIM</div>
     </footer>
     </div>
 
     <script>
-        const text = "Hello, welcome to Sumo-Im!";
+        const text = "Hello, welcome to SUMOIM!";
             const speed = 100; // Speed of the typewriter effect in milliseconds
             let index = 0;
 
